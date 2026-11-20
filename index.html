@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de contacto. Envíanos tu consulta.">
+  <title>Contacto | BITNARA</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar">
+      <a class="brand" href="#" aria-label="BITNARA, inicio"><span class="brand-mark">B</span> BITNARA</a>
+      <span class="top-note">CONTACTO</span>
+    </nav>
+
+    <section class="contact-layout">
+      <div class="intro">
+        <p class="eyebrow"><span class="dot"></span> ESTAMOS PARA AYUDARTE</p>
+        <h1>Hablemos<span>.</span></h1>
+        <p class="intro-copy">¿Tienes una pregunta, una propuesta o necesitas más información? Escríbenos. Revisaremos tu mensaje y te responderemos por correo electrónico.</p>
+        <div class="info-line"><span class="info-icon">↗</span><span>Respuesta por correo electrónico</span></div>
+        <div class="info-line"><span class="info-icon">⌁</span><span>Cuéntanos qué necesitas</span></div>
+      </div>
+
+      <div class="form-card">
+        <div class="form-heading">
+          <div>
+            <p class="eyebrow">FORMULARIO</p>
+            <h2>Envíanos un mensaje</h2>
+          </div>
+          <span class="secure-mark" aria-label="Formulario de contacto">✳</span>
+        </div>
+
+        <form id="contact-form">
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" placeholder="Tu nombre" autocomplete="name" maxlength="80" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" placeholder="nombre@ejemplo.com" autocomplete="email" maxlength="120" required>
+          </div>
+
+          <div class="field">
+            <label for="subject">Asunto</label>
+            <input id="subject" name="subject" type="text" placeholder="¿Sobre qué quieres hablar?" maxlength="120" required>
+          </div>
+
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escribe aquí tu mensaje..." maxlength="3000" required></textarea>
+            <span class="field-hint">Máximo 3000 caracteres.</span>
+          </div>
+
+          <!-- Campo anti-spam: déjalo tal como está. -->
+          <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web de BITNARA">
+
+          <label class="privacy-check">
+            <input type="checkbox" name="privacy" value="accepted" required>
+            <span>He leído y acepto que se utilicen mis datos para responder a esta consulta.</span>
+          </label>
+
+          <button id="submit-button" type="submit">
+            <span id="button-label">Enviar mensaje</span>
+            <span aria-hidden="true">→</span>
+          </button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          <p class="legal-note">Utilizaremos tu correo únicamente para responder a tu mensaje.</p>
+        </form>
+      </div>
+    </section>
+
+    <footer><span>© <span id="year"></span> BITNARA</span><span>CONTACTO</span></footer>
+  </main>
+</body>
+</html>
