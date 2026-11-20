@@ -1,6 +1,6 @@
 // CONFIGURACIÓN: escribe aquí el correo en el que quieres recibir los mensajes.
 // Ejemplo: const DESTINATION_EMAIL = "tucorreo@gmail.com";
-const DESTINATION_EMAIL = "PON_AQUI_TU_CORREO";
+const DESTINATION_EMAIL = "dominguezaritz2@gmail.com";
 
 const form = document.getElementById("contact-form");
 const submitButton = document.getElementById("submit-button");
