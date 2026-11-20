@@ -1,0 +1,32 @@
+FORMULARIO DE CONTACTO - BITNARA
+
+ARCHIVOS
+- index.html: estructura del formulario.
+- styles.css: diseño y adaptación a móviles.
+- script.js: configura el correo y prepara el envío.
+
+CONFIGURACIÓN OBLIGATORIA
+1. Abre script.js en Visual Studio Code.
+2. Busca: const DESTINATION_EMAIL = "PON_AQUI_TU_CORREO";
+3. Sustituye PON_AQUI_TU_CORREO por tu dirección real, por ejemplo:
+   const DESTINATION_EMAIL = "tucorreo@gmail.com";
+4. Guarda el archivo.
+
+ACTIVAR FORMSubmit
+1. Ejecuta la web con Live Server en VS Code (mejor que abrir el HTML como archivo).
+2. Envía un mensaje de prueba desde el formulario.
+3. FormSubmit enviará un correo de verificación a la dirección configurada.
+4. Abre ese correo y pulsa el enlace de activación. Revisa spam/correo no deseado si no aparece.
+5. Vuelve a enviar una prueba. A partir de entonces, los mensajes se enviarán a tu bandeja de entrada.
+
+RESPONDER
+El campo de correo del visitante se envía como _replyto. En el correo recibido, pulsa Responder para contestarle directamente.
+
+PUBLICAR
+Para que cualquier persona pueda usarlo, publica los tres archivos (index.html, styles.css y script.js) en un alojamiento web estático como GitHub Pages. FormSubmit recibe el formulario desde la web publicada.
+
+IMPORTANTE
+- No publiques el formulario sin configurar y verificar primero tu correo.
+- Necesitas conexión a Internet.
+- FormSubmit es un servicio externo; revisa sus condiciones y privacidad.
+- Añade una política de privacidad adecuada antes de usarlo públicamente.
